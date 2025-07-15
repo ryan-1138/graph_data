@@ -430,19 +430,19 @@ function highlightFilter(filter) {
                   
                   // if this network requires displaying the configure window,
                   // put it in its div
-                  // options.configure["container"] = document.getElementById("config");
+                   options.configure["container"] = document.getElementById("config");
                   
 
-                  // network = new vis.Network(container, data, options);
-
-                  
-
-                  
+                   network = new vis.Network(container, data, options);
 
                   
 
+                  
 
-                <!--
+                  
+
+
+               
                       network.on("stabilizationProgress", function(params) {
                           document.getElementById('loadingBar').removeAttribute("style");
                           var maxWidth = 496;
@@ -459,7 +459,7 @@ function highlightFilter(filter) {
                           // really clean the dom element
                           setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
                       });
-                  -->
+                  
 
                   // return network;
 
